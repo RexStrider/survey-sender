@@ -22,9 +22,9 @@ app.use(
 app.use( passport.initialize());
 app.use( passport.session());
 
-// app.get('/', (req, res) => {
-//     res.send({ message: 'So long there Bowser!'});
-// });
+app.get('/', (req, res) => {
+    res.send({ message: 'So long there Bowser!'});
+});
 
 require('./routes/auth')(app);
 
