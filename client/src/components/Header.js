@@ -15,7 +15,6 @@ class Header extends Component {
     }
 
     render() { 
-        console.log(this.props);
         return (
             <nav>
                 <section className='nav-wrapper'>
@@ -26,9 +25,7 @@ class Header extends Component {
                         Survey Sender
                     </Link>
                     <ul className='right'>
-                        <li>
-                            {this.renderContent()}
-                        </li>
+                        {this.renderContent()}
                     </ul>
                 </section>
             </nav>
