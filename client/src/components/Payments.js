@@ -10,7 +10,7 @@ class Payments extends Component {
                 // 5 dollars or 500 cents
                 amount={5 * 100}
                 token={token => console.log(token)}
-                stripeKey={process.env.REAC_APP_STRIPE_KEY}
+                stripeKey={process.env.REACT_APP_STRIPE_KEY}
             />
         );
     }
