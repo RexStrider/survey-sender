@@ -19,16 +19,14 @@ class App extends Component {
 
     render() { 
         return (
-            <section className='container'>
-                <BrowserRouter>
-                    <section>
-                        <Header />
-                        <Route exact path="/" component={Landing} />
-                        <Route exact path="/surveys" component={Dashboard} />
-                        <Route path="/surveys/new" component={SurveyNew} />
-                    </section>
-                </BrowserRouter>
-            </section>
+            <BrowserRouter>
+                <section className='container'>
+                    <Header />
+                    <Route exact path="/" component={Landing} />
+                    <Route exact path="/surveys" component={Dashboard} />
+                    <Route path="/surveys/new" component={SurveyNew} />
+                </section>
+            </BrowserRouter>
         );
     }
 }
