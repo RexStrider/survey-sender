@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default () => {
+export default ({ input }) => {
     return (
         <section>
-            <h2>Survey Title</h2>
-            <input />
+            <input {...input} />
         </section>
     );
 }
