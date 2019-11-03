@@ -7,7 +7,7 @@ export default emails => {
     .filter(email => regex.test(email) === false && email.length);
 
     if (invalidEmails.length) {
-        return `These emails are invalid: ${invalidEmails}`;
+        return `These emails are invalid: ${invalidEmails.join(', ')}`;
     }
 
     return;
